@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+.Footer {
+  margin-top: -11px;
+  display: flex;
+  background: linear-gradient(to right, #28ade9, #8744a8) left top #060a15
+    no-repeat;
+  background-size: 100% 3px;
+  padding: 30px;
+
+  justify-content: space-around;
+  align-items: center;
+
+  .FooterBrandContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .FooterBrand {
+      font-family: "Audiowide", cursive;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 2rem;
+      color: #8744a8;
+    }
+    .FooterText {
+      font-family: "Rubik", sans-serif;
+      color: #ffffff;
+    }
+  }
+
+  .FooterNav {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    .FooterNavItem {
+      // list-style: none;
+      // font-family: "Rubik", sans-serif;
+      // font-size: 1.5rem;
+      // color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 5px 10px;
+      width: 120px;
+      border-radius: 20px;
+      background: white;
+      color: black;
+      font-family: "Rubik", sans-serif;
+      font-size: 0.8rem;
+    }
+  }
+}

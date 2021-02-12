@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #28ade9, #8744a8) left bottom #060a15
+    no-repeat;
+  background-size: 100% 3px;
+  height: 55px;
+
+  .brand {
+    font-family: "Audiowide", cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #f6fafc;
+  }
+
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+
+    .menuItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 5px 10px;
+      width: 100px;
+      border-radius: 20px;
+      background: white;
+      color: black;
+      font-family: "Rubik", sans-serif;
+      font-size: 0.8rem;
+    }
+  }
+}
