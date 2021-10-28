@@ -1,32 +1,64 @@
 .sectionServices {
   display: flex;
-
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  min-height: 100vh;
-
-  background-color: #060a15;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1447' height='588' preserveAspectRatio='none' viewBox='0 0 1447 588'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1109%26quot%3b)' fill='none'%3e%3crect width='1447' height='588' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c446.533C79.864%2c427.219%2c133.924%2c359.79%2c206.656%2c321.563C288.834%2c278.371%2c405.093%2c286.145%2c454.59%2c207.604C503.993%2c129.211%2c466.906%2c26.409%2c450.087%2c-64.713C433.87%2c-152.573%2c424.459%2c-250.295%2c358.874%2c-310.966C294.743%2c-370.292%2c193.558%2c-349.5%2c111.084%2c-378.316C22.487%2c-409.272%2c-50.423%2c-502.948%2c-142.773%2c-486.241C-234.917%2c-469.572%2c-284.074%2c-369.919%2c-342.006%2c-296.35C-397.354%2c-226.063%2c-463.275%2c-156.909%2c-472.204%2c-67.893C-481.01%2c19.894%2c-420.424%2c95.254%2c-389.578%2c177.914C-355.922%2c268.106%2c-361.965%2c385.263%2c-282.712%2c439.909C-203.504%2c494.524%2c-93.516%2c469.148%2c0%2c446.533' fill='%230a1e32'%3e%3c/path%3e%3cpath d='M1447 1002.175C1528.387 1007.0129999999999 1609.452 991.046 1681.522 952.924 1757.851 912.549 1827.6309999999999 856.648 1867.208 779.902 1907.766 701.252 1925.671 608.041 1903.557 522.357 1882.327 440.099 1813.087 382.329 1749.932 325.508 1693.348 274.6 1632.06 227.18099999999998 1557.654 211.14800000000002 1486.117 195.733 1415.109 219.77999999999997 1344.258 238.09300000000002 1271.012 257.025 1187.67 263.193 1137.436 319.761 1087.068 376.48 1102.144 462.627 1080.346 535.283 1053.674 624.183 961.889 707.711 995.0319999999999 794.407 1027.726 879.929 1146.549 887.825 1229.738 926.067 1300.901 958.78 1368.816 997.527 1447 1002.175' fill='%2312365c'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1109'%3e%3crect width='1447' height='588' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23010018' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23020030' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23030048' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23040060' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23050078' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
+  height: 100vh;
 
-  .sectionText {
+  @media only screen and (max-width: 500px) and (min-width: 350px) {
+    height: auto;
+  }
+  .BoxServices {
     display: flex;
     flex-direction: column;
     width: 500px;
-    
+    margin-bottom: -10px;
 
-    .sectionTitle {
-      color: #ffffff;
-      font-size: 1.8rem;
-      font-family: "Rubik", sans-serif;
-      padding: 0px 15px;
-      margin-bottom: 20px;
+    @media only screen and (max-width: 500px) and (min-width: 350px){
+      width: 300px;
     }
-    .sectionText {
-      font-size: 1.5rem;
-      color: #efefef;
-      padding: 0px 15px;
-      font-family: "Montserrat", sans-serif;
+
+    .BoxItem {
+      display: flex;
+      color: white;
+      margin-bottom: 20px;
+
+      &:last-child{
+        margin-bottom: 50px;
+      }
+
+      @media only screen and (max-width: 500px) and (min-width: 350px){
+        flex-direction: column-reverse;
+      }
+      .itemDecoration {
+        padding: 20px;
+        background: rgba(white, 1);
+        border-radius: 10px;
+        height: auto;
+        width: 130px;
+        margin-right: 20px;
+
+        @media only screen and (max-width: 500px) and (min-width: 350px){
+          flex-direction: column-reverse;
+          margin: 20px 0px 0px 0px;
+          width: auto;
+          height: auto;
+          
+          // padding: 70px;
+        }
+      }
+      .itemInformation {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: rgba(black, 1);
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.2rem;
+      }
     }
   }
 }

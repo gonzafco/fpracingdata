@@ -1,0 +1,17 @@
+.BrandContainer {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  // margin-right: -10px;
+  margin-bottom: -10px;
+  .BrandBox {
+    background: rgba(white,1);
+    padding: 10px;
+    // margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border:2px solid rgb(3, 253, 253);
+  }
+}

@@ -18,6 +18,11 @@
     display: flex;
     flex-direction: column;
     width: 500px;
+
+    @media only screen and (max-width: 500px) and (min-width: 350px)  {
+      width: auto;
+      text-align: center;
+    }
     
 
     .sectionTitle {
@@ -26,6 +31,10 @@
       font-family: "Rubik", sans-serif;
       padding: 0px 15px;
       //margin-bottom: 20px;
+
+      @media only screen and (max-width: 500px) and (min-width: 350px)  {
+        margin: 20px 0px;
+      }
     }
     .sectionText {
       font-size: 1.3rem;
@@ -38,6 +47,11 @@
     display: flex;
     width: 800px;
     justify-content: space-between;
+
+    @media only screen and (max-width: 500px) and (min-width: 350px)  {
+      flex-direction: column;
+      width: auto;
+    }
     
   }
 }

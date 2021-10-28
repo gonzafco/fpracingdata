@@ -1,7 +1,25 @@
 import styles from "./Hero.module.scss";
-import Image from "next/image";
-
+import { useState, useEffect } from "react";
 export default function Hero() {
+  const [resize, setResize] = useState({ width: 600, height: 350 });
+
+//   useEffect(() => {
+//     checkScreenSize();
+//   },[]);
+
+//   function checkScreenSize() {
+//     const size = window.screen.width;
+    
+//     switch (true) {
+//       case size <= 320:
+//         setResize({ width: 200, height: 250 }, console.log(resize));
+//         break;
+//       // case size <= 320:
+//       //   setResize({ width: 200, height: 250 }, console.log(resize));
+//       //   break;
+//     }
+//   }
+
   return (
     <header className={styles.headerWrapper}>
       <div className={[styles.wrapper, styles.wrapperRounded].join(" ")}>
@@ -13,11 +31,10 @@ export default function Hero() {
         </p>
       </div>
       <div className={styles.headerDecoration}>
-        <Image
+        <img
           src="/assets/images/heroimage.jpg"
-          layout="fixed"
-          width={600}
-          height={350}
+          width={resize.width}
+          height={resize.height}
         />
       </div>
     </header>

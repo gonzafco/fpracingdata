@@ -1,5 +1,4 @@
 import styles from "./SectionSubscription.module.scss";
-import Image from "next/image";
 import Card from "../Card";
 
 export default function SectionSubscription({ title, text, id } = props) {
