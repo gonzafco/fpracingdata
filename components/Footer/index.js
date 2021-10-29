@@ -27,7 +27,7 @@ export default function Footer({ nav } = props) {
         </div>
         <div className={`${styles.ItemContactInfo} ${styles.Cellphone}`}>
           <Link className={styles.contact} href="https://goo.gl/maps/PUcoU2EaExMQck1e9">
-            <span>Ladines 191, Buenos aires</span>
+            <span>Ladines 191 - Tablada - Buenos aires</span>
           </Link>
         </div>
       </div>
